@@ -3,12 +3,10 @@ import requests
 import random
 from random import shuffle
 import os
-#API_TOKEN = os.environ.get("TMDB_API_TOKEN", "")
-API_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1MTE4Y2NkODY1MWUyMDczOWZhYTRlMzU4Y2I2ZDIwZCIsInN1YiI6IjVmMDU2OGQwMjBhZjc3MDAzNWU3N2IzOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.VnK58vvU8DOSdgzhlxiHt-PfHTwIVpsXelEW4k47kgA"
+API_TOKEN = os.environ.get("TMDB_API_TOKEN", "")
 
 def get_popular_movies():
     endpoint = "https://api.themoviedb.org/3/movie/popular"
-    #api_token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1MTE4Y2NkODY1MWUyMDczOWZhYTRlMzU4Y2I2ZDIwZCIsInN1YiI6IjVmMDU2OGQwMjBhZjc3MDAzNWU3N2IzOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.VnK58vvU8DOSdgzhlxiHt-PfHTwIVpsXelEW4k47kgA"
     headers = {
         "Authorization": f"Bearer {API_TOKEN}"
     }
